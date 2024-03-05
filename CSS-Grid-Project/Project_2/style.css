@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px;
+
+}
+#nav h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav i{
+    background-color: black;
+    color: aliceblue;
+    padding: 11px;
+    font-size: 20px;
+    border-radius: 50%;
+    font-weight: 500;
+}
+#center{
+    /* height: 40%; */
+    width: 100%;
+    /* background-color: blueviolet; */
+    padding: 40px 80px;
+}
+#center h1{
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 85px;
+}
+
+#center-in{
+    height: 200px;
+    width: 100%;
+    /* background-color: lightcoral; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#center-in p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+#right{
+    width: 20%;
+}
+.elem{
+    /* background-color: aquamarine; */
+    padding: 20px 0px;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elem i{
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+}
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.elem:hover i{
+    opacity: 1;
+}
+.elem:hover {
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+}
+.elem:hover a{
+    text-decoration: underline;
+}
+#bottom{
+    height: 60%;
+    width: 100%;
+    background-color: blanchedalmond;
+    background-image: url(pouriya-kafaei-NjpghYkpL9A-unsplash.jpg);
+    background-size: cover;
+    background-position: 0 20%;
+}
