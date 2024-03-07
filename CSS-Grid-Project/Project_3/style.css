@@ -28,10 +28,12 @@ html, body{
     padding-bottom: 50px;
 }
 #left h1{
-    font-size: 120px;
+    /* font-size: 120px; */
+    font-size: 8vw;
     font-weight: 500;
     font-family: sans-serif;
-    line-height: 120px;
+    /* line-height: 120px; */
+    line-height: 9vw;
     margin-bottom: 50px;
 }
 #bottom-left{
@@ -69,17 +71,21 @@ html, body{
 }
 #left h2{
     margin-top: 30px;
-    font-size: 30px;
+    margin-top: 2.6vw;
+    /* font-size: 30px; */
+    font-size: 2.6vw;
 
 }
 #left p{
     margin-bottom: 10px;
-    font-size: 17px;
+    /* font-size: 17px; */
+    font-size: 1.3vw;
     margin-top: 20px;
     width: 70%;
     font-weight: 500;
     color: #333;
-    line-height: 25px;
+    /* line-height: 25px; */
+    line-height: 2.2vw;
 }
 #right{
     height: 100%;
@@ -139,4 +145,144 @@ html, body{
     transform-origin: 0 0;
     font-size: 35px;
     font-weight: 530;
+}
+@media (max-width:600px){
+    #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 20px 40px;
+        padding-top: 90px;
+        gap: 80px;
+    }
+    #left{
+        height: fit-content;
+        height: 60%;
+        width: 100%;
+        /* background-color: blanchedalmond; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+    #left h1{
+        /* font-size: 120px; */
+        font-size: 20vw;
+        font-weight: 500;
+        font-family: sans-serif;
+        /* line-height: 120px; */
+        line-height: 19vw;  
+    }
+    #bottom-left{
+        height: 40%;
+        width: 100%;
+        /* background-color: lightgreen; */
+    }
+    #color{
+        /* background-color: chartreuse; */
+        width: fit-content;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid #111010 ;
+    }
+    #color h5{
+        font-size: 20px;
+        margin-right: 5px;
+        font-weight: 500;
+    }
+    #color-1{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color:antiquewhite;
+        margin: 5px;
+    }
+    #color-2{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: chocolate;
+    }
+    #left h2{
+        margin-top: 10vw;
+        /* font-size: 30px; */
+        font-size: 7vw;
+    
+    }
+    #left p{
+        margin-bottom: 10px;
+        font-size: 3vw;
+        margin-top: 10px;
+        width: 100%;
+        font-weight: 500;
+        color: #333;
+        line-height: 4.5vw;
+    }
+    #right{
+        height: 80%;
+        width: 100%;
+        /* background-color: chocolate; */
+        position: relative;
+    }
+    #right-top{
+        height: 50px;
+        width: 100%;
+        /* background-color: darkgrey; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        padding-right: 10px;
+    }
+    #right-top h4{
+        font-size: 6vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+    #right-top h5{
+        font-size: 4vw;
+    }
+    #right-top h5 i{
+        color: gold;
+        padding: 2px;
+    }
+    #right img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #circle{
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #333;
+        color: #fff;
+        /* right: -50%; */
+        top: 88%;
+        left: 72%;
+    }
+    #circle h4{
+        font-size: 5.2vw;
+        font-weight: 500;
+    }
+    #rotated{
+        position: absolute;
+        left: -10%;
+        bottom: 10%;
+        padding-bottom: 2px;
+        /* rotate: -90deg; */
+        /* transform-origin: 0 0; */
+        font-size: 30px;
+        font-weight: 520;
+    }
 }
