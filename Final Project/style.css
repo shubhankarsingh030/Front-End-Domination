@@ -224,7 +224,13 @@ html , body{
     
 }
 #page4{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    position: relative;
 
+}
+#page4-content{
+    width: 65vw;
+    margin-left: 28%;
+    
 }
