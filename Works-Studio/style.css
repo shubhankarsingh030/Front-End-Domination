@@ -176,21 +176,71 @@ body {
 }
 .image-container{
     padding: 2vw;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 .image-div{
     height: 35vw;
     width: 25vw;
-    position: absolute;
+    position: relative;
+    overflow: hidden;
+    margin: 0.8vw;
 }
 .image-div img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    transition: all ease 0.5s;
+
 }
 .overlay{
     height: 100%;
     width: 100%;
+    background-color: #00000029;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+    transition: all ease 0.5s;
+}
+.overlay p{
+    font-size: 3vw;
+    text-align: center;
+    color: #fff;
+    line-height: 2.5vw;
+    opacity: 0;
+    transition: all ease 0.5s;
+
+}
+.image-div:hover .overlay{
     background-color: #000;
-    position: relative;
+}
+.image-div:hover .overlay p{
+    opacity: 1;
+}
+.image-div:hover img{
+    scale: 1.2;
+}
+#footer{
+    height: 40vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 2vw;
+}
+#foot{
+    height: 50%;
+    width: 100%;
+    background-color: #000;
+}
+#footer h2{
+    text-transform: uppercase;
+    font-size: 1vw;
+    cursor: pointer;
 }

@@ -38,15 +38,23 @@ function loader() {
 }
 loader();
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
-    smooth: true,
-});
-
-elem.forEach(function(ele){
-    ele.addEventListener("mouseenter",function(){
-        let bgimg = ele.getAttribute("data-img");
-        page2.style.backgroundImage = `url(${bgimg})`
+function loco(){
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector("#main"),
+        smooth: true,
+    });
+    
+    document.querySelector("#footer h2").addEventListener("click",() => {
+        scroll.scrollTo(0)
     })
-})
-
+    
+    elem.forEach(function(ele){
+        ele.addEventListener("mouseenter",function(){
+            let bgimg = ele.getAttribute("data-img");
+            page2.style.backgroundImage = `url(${bgimg})`
+        })
+    })
+    
+    
+}
+loco();
