@@ -1,0 +1,63 @@
+:root{
+    --salmon:#EF9D71;
+    --black:#000000;
+    --white:#ffffff;
+    --cyan:#AEDEE0;
+    --dsalmon:#532521;
+    --dcyan:#1F2F32;
+}
+body{
+    transition: background-color ease-out .5s;
+}
+*::selection{
+    background-color: var(--salmon);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pp neue Machina inktrap';
+}
+.craft{
+    font-family: 'Satoshi variable';
+}
+.cont{
+    font-family: 'Pp Neue Machina Plain Light';
+}
+.video{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body[theme="black"]{
+    background-color: var(--black);
+}
+body[theme="black"] .section{
+    color: var(--white);
+}
+
+
+body[theme="white"]{
+    background-color: var(--white);
+}
+body[theme="white"] .section{
+    color: var(--black);
+}
+
+
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+body[theme="salmon"] .section{
+    color: var(--dsalmon);
+}
+
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+    color: var(--dcyan);
+}
